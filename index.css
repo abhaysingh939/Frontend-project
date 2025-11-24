@@ -1,0 +1,147 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9f9f9 0%, #e8f0ff 100%);
+  color: #333;
+}
+
+/* App container */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card container */
+.container {
+  background-color: #fff;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* Form Groups */
+.container form div {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.container label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  display: block;
+  color: #444;
+}
+
+.container input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fefefe;
+  transition: border-color 0.3s;
+}
+
+.container input:focus {
+  border-color: #0057ff;
+  outline: none;
+}
+
+/* Buttons */
+.container .btn,
+.container .btnn {
+  width: 48%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container .btn {
+  background-color: #0057ff;
+  color: #fff;
+}
+
+.container .btn:hover {
+  background-color: #003bb3;
+}
+
+.container .btnn {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+.container .btnn:hover {
+  background-color: #cc0002;
+}
+
+/* Button Group */
+.container form > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Result Section */
+.container h3 {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+
+.container p {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 6px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 28px 20px;
+  }
+
+  .container .btn,
+  .container .btnn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .container form > div:last-of-type {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
